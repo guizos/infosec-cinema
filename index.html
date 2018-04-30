@@ -4,48 +4,189 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="js/bundle.js"></script>
+    <script src="js/infosec-cinema.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>InfoSec Cinema</title>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Welcome to InfoSec Cinema</a>
-            </div>
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Welcome to InfoSec Cinema</a>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-auto">
-                Search box
+            <div class="col">
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" class="form-control" placeholder="Search for a keyword or keywords" aria-label="Search for a keyword or keywords"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" id="search" type="button">Search</button>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" id="clear" type="button">Clear</button>
+                    </div>
+                </div>
             </div>
             <div class="col col-lg-2">
                 <div class="row">
-                    Movie - Event selector
-                </div>
-                <div class="row">
-                    Clear button
+                    <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option-movie" autocomplete="off" checked> Movies
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option-event" autocomplete="off"> Events
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            Movies - Events (show all movies first)
+            <div class="col">
+
+                <div class="accordion" id="filters">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0 p-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    STRIDE Elements
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Spoofing" id="spoofing">
+                                        <label class="checkbox-label" for="spoofing">Spoofing</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Tampering" id="tampering">
+                                        <label class="checkbox-label" for="tampering">Tampering</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Repudiation" id="repudiation">
+                                        <label class="checkbox-label" for="repudiation">Repudiation</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Information Leakage" id="information">
+                                        <label class="checkbox-label" for="information">Information Leakage</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Denial of Service" id="dos">
+                                        <label class="checkbox-label" for="dos">Denial of Service</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" aria-label="Escalation of Privilege" id="escalation">
+                                        <label class="form-check-label" for="escalation">Escalation of Privilege</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    ISO Controls
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="checkbox" id="policies" value="policies">
+                                        <label class="form-check-label" for="policies">Policies</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="organization" value="organization">
+                                        <label class="form-check-label" for="organization">Organization</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="human" value="hr">
+                                        <label class="form-check-label" for="human">Human Resources</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="asset" value="asset">
+                                        <label class="form-check-label" for="asset">Asset Mngmt.</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="access" value="access">
+                                        <label class="form-check-label" for="access">Access Control</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="cryptography" value="cryptography">
+                                        <label class="form-check-label" for="cryptography">Cryptography</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="physical" value="physical">
+                                        <label class="form-check-label" for="physical">Physical Security</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="checkbox" id="operations" value="operations">
+                                        <label class="form-check-label" for="operations">Operations Security</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="comms" value="comms">
+                                        <label class="form-check-label" for="comms">Communications Security</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="system" value="system">
+                                        <label class="form-check-label" for="system">System acquisition, develop. and maint.</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="supplier" value="supplier">
+                                        <label class="form-check-label" for="supplier">Supplier relationships</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="incident" value="incident">
+                                        <label class="form-check-label" for="incident">Incident Management</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="continuity" value="continuity">
+                                        <label class="form-check-label" for="continuity">Business Continuity</label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="checkbox" id="compliance" value="compliance">
+                                        <label class="form-check-label" for="compliance">Compliance</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="row">
             <div class="col">
-                1 of 3
-            </div>
-            <div class="col">
-                2 of 3
-            </div>
-            <div class="col">
-                3 of 3
+                <div class="card">
+                    <h5 class="card-header">Movies - Events (show all movies first)</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                1 of 3
+                            </div>
+                            <div class="col">
+                                2 of 3
+                            </div>
+                            <div class="col">
+                                3 of 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
