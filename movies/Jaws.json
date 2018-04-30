@@ -1,0 +1,130 @@
+{
+	"title": "Jaws",
+	"events": 
+[{
+    "time": "4:55",
+    "time_min": 4,
+    "time_secs": 295,
+    "duration": "2",
+    "description": "A girl bathing in the sea is being attacked by a shark and is crying out for help, but the boy on the shore does not realize as he is inebriated. The lack of communication represents a threat to security.",
+    "stride": ["-", "-", "-", "-", "d", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "comms", "-", "-", "-", "-", "-"],
+    "parties": [
+        ["Girl being attacked", "Very negative"],
+        ["Boy on the shore", "Negative"],
+        ["Community", "Very negative"]
+    ],
+    "discussion": "Discuss the importance of timely received communication – in certain cases it could impact greatly a life/death situation."
+}, {
+    "time": "09:31",
+    "time_min": 9,
+    "time_secs": 571,
+    "duration": "1",
+    "description": "Upon threat of a shark in the waters, Chief Brody suggests to put up “Beach Closed” signs as a good security practice. This will eventually be blocked by the Mayor, who sees it as a threat to business.",
+    "stride": ["-", "-", "-", "i", "-", "-"],
+    "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "continuity", "-"],
+    "parties": [
+        ["Brody", "Negative"],
+        ["Community", "Very positive"],
+        ["Mayor", "Very negative"]
+    ],
+    "discussion": "The tension between security and its cost (i.e., the impact on the tourist business) pervades most of the movie, and highlights one of the biggest issues in the world of security"
+}, {
+    "time": "12:00",
+    "time_min": 12,
+    "time_secs": 720,
+    "duration": "2",
+    "description": "The Mayor convinces Chief Brody to change the cause of death from shark attack to boat accident, to avoid panic and damage to 4th of July tourism.",
+    "stride": ["-", "t", "-", "-", "-", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "continuity", "-"],
+    "parties": [
+        ["Mayor", "Positive"],
+        ["Brody", "Neutral"],
+        ["Community", "Negative"]
+    ],
+    "discussion": "The Mayor’s security decision, made in the interest of avoiding public panic and damage to the tourist business, will have a negative impact on the community, since the security issue has not been dealt with, but obfuscated instead."
+}, {
+    "time": "19:08",
+    "time_min": 19,
+    "time_secs": 1148,
+    "duration": "1",
+    "description": "In a public meeting organized to discuss the aftermath of the shark’s attack on the beach, Chief Brody lists a series of security measures that will be put in place to guarantee future safety.",
+    "stride": ["-", "-", "-", "-", "-", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "incident", "-", "-"],
+    "parties": [
+        ["Community", "Positive"],
+        ["Shark", "Negative"],
+        ["", ""]
+    ],
+    "discussion": "Chief Brody demonstrates the importance of security procedures in case of an attack."
+}, {
+    "time": "28:12",
+    "time_min": 28,
+    "time_secs": 1692,
+    "duration": "5",
+    "description": "A variety of people wishes to capture the shark and claim the 3000$ reward, but they do so without any security mechanisms in place (e.g., too many people on one boat).",
+    "stride": ["-", "-", "-", "-", "d", "-"],
+    "isocontrols": ["-", "-", "-", "asset", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "compliance"],
+    "parties": [
+        ["People on the boat", "Negative"],
+        ["", ""],
+        ["", ""]
+    ],
+    "discussion": "No risk analysis is performed before starting the set task (e.g., going out on a boat to catch a big shark)."
+}, {
+    "time": "48:21",
+    "time_min": 48,
+    "time_secs": 2901,
+    "duration": "1",
+    "description": "Cooper explores an attacked boat and finds a large shark tooth, which enables him to identify the attacker as a great white shark.",
+    "stride": ["-", "-", "-", "i", "-", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "parties": [
+        ["Cooper", "Positive"],
+        ["Shark", "Negative"],
+        ["", ""]
+    ],
+    "discussion": "Identifying the attacker can be positive and helpful, since it can provide a better understanding of the attacker’s motivation, goals and capabilities."
+}, {
+    "time": "1:10:00",
+    "time_min": 70,
+    "time_secs": 4200,
+    "duration": "1",
+    "description": "Chief Brody throws chum in the sea to attract the shark.",
+    "stride": ["-", "t", "-", "-", "-", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "parties": [
+        ["Fishing party", "Positive"],
+        ["Shark", "Negative"],
+        ["", ""]
+    ],
+    "discussion": "Discuss the benefits and dangers of a “baiting” strategy to lure your attacker closer."
+}, {
+    "time": "1:31:03",
+    "time_min": 91,
+    "time_secs": 5463,
+    "duration": "2",
+    "description": "The shark attacks the boat with brute force.",
+    "stride": ["-", "t", "-", "-", "-", "e"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+    "parties": [
+        ["Fishing party", "Very negative"],
+        ["Shark", "Positive"],
+        ["", ""]
+    ],
+    "discussion": "Discuss what prevention or mitigation strategies could be adopted in the case of brutal attack on one’s physical security."
+}, {
+    "time": "1:44:00",
+    "time_min": 104,
+    "time_secs": 6240,
+    "duration": "3",
+    "description": "The boat systems begin to fail after the shark’s attack and the overstress on the engine.",
+    "stride": ["-", "t", "-", "-", "-", "-"],
+    "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "-", "-", "incident", "-", "-"],
+    "parties": [
+        ["Fishing party", "Very negative"],
+        ["Shark", "Positive"],
+        ["", ""]
+    ],
+    "discussion": "Discuss the details of the system’s failure and what can be done to prevent it."
+}]}

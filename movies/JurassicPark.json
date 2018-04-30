@@ -1,0 +1,452 @@
+{
+    "title": "Jurassic Park",
+    "events": [{
+        "time": "02:30",
+        "time_min": 2,
+        "time_secs": 150,
+        "duration": "2",
+        "description": "The cage is not properly locked into the floor when the raptor is being transfered. One person dies and the raptor almost scapes.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Employees", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Obviously, there are not enought safeguards to perform such a risky operation. Did they test the cage? How would you ensure this does not happen? Any way of avoiding the risk of life even if there is a malfunction from the cage? Later on the movie they mention a kill switch but it takes time. What about an instant one?"
+    }, {
+        "time": "04:21",
+        "time_min": 4,
+        "time_secs": 261,
+        "duration": "2",
+        "description": "Jurassic Park investors are worried about the safety of the park and have asked about an independent inspection.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "organization", "-", "-", "-", "-", "-", "-", "-", "system", "-", "-", "continuity", "compliance"],
+        "parties": [
+            ["Park", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "In this case the audit comes because of the suit from the worker that died. This is a post-morten audit. What do you think this says about Ingen security posture? Are they risk averse or the contrary? If the purpose of the audit is to check the security why do they bring Dinosaur experts?"
+    }, {
+        "time": "5:00",
+        "time_min": 5,
+        "time_secs": 300,
+        "duration": "1",
+        "description": "The chief of the excavation complaints about the inspection and how it would make everything slower. ",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["policies", "-", "hr", "-", "-", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This is an example of how some employees views can go against the view of the organisation. How can a company take security seriourly if one of their managers does not care about it? Should security go be top-down or bottom-up?"
+    }, {
+        "time": "10:00",
+        "time_min": 10,
+        "time_secs": 600,
+        "duration": "1",
+        "description": "The camp van doesn't have a lock and Mr. Hammond can get in.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Grant", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Initially, this could be seen as a negative thing, but let's think about this twice. Do you think locking the van is a must from the point of view of security? What about the risk apetite? Try to analyse this risk from the point of view of likelihood and impact (remember they are in the dessert)."
+    }, {
+        "time": "13:20",
+        "time_min": 13,
+        "time_secs": 800,
+        "duration": "4",
+        "description": "Someone pays Dogson (employee) to get embryos from the park. The employee shows a device to hide th embryos. ",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This is a clear case of industrial espionage. During this scene the employee mentions the reason he is so pissed off (he deserves more money). What does this scene tell you about human resources management? "
+    }, {
+        "time": "26:30",
+        "time_min": 26,
+        "time_secs": 1590,
+        "duration": "1",
+        "description": "Malcom and Grant pull up the bar on the simulator and scape",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Another health and safety issue. Discuss how this could affect the park if a really maliciouos party is taking part on a visit."
+    }, {
+        "time": "28:30",
+        "time_min": 28,
+        "time_secs": 1710,
+        "duration": "2",
+        "description": "A scientist mentions that they have a population control mechanisms. No authorized breeding in the park as all dinosaurs are female.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["policies", "-", "-", "-", "-", "-", "-", "-", "-", "system", "-", "-", "-", "compliance"],
+        "parties": [
+            ["Park", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This is a very good example of security control to mitigate the risk of uncontrolled breeding. Simulate a risk assessment process that has this security control as an outcome. What would happend during the review phase? Discuss what are the main reasons this control fails (within the risk assessment process).  "
+    }, {
+        "time": "32:00",
+        "time_min": 32,
+        "time_secs": 1920,
+        "duration": "2",
+        "description": "Velociraptors test the fences sistematically (like a good pentester).",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Velociraptors", "Positive"],
+            ["Park", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Velociraptors are behaving as pentesters. But in this case they are a very rogue Red Team. Discuss the potential effects of the raptors finding a way out. How could the company identify possible threats by the raptors in time? Maybe they could create a raptor red team that tries to behave as raptors? This is something they don't do. They only take the defensive approach. -> Mistake."
+    }, {
+        "time": "34:00",
+        "time_min": 34,
+        "time_secs": 2040,
+        "duration": "3",
+        "description": "Malcom discusses the problem of responsible development because scientists raise ethical issues",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["policies", "organization", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "compliance"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the effect of disruptive technologies into legal frameworks and how they affect the development of the law. Example of cases such as Cambridge Analytica or genomics."
+    }, {
+        "time": "41:20",
+        "time_min": 41,
+        "time_secs": 2480,
+        "duration": "1",
+        "description": "Arnold (Samuel L. Jackson) mentions that the park is not yet ready.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "organization", "-", "-", "-", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park ", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "One of the employees of the park is already telling the senior management that the park isn't ready. Discuss how employees can convince management of the need for responsible development. How governments can enforce this, as it happens in the IoT?"
+    }, {
+        "time": "41:30",
+        "time_min": 41,
+        "time_secs": 2490,
+        "duration": "2",
+        "description": "Discussion between Hammong and disgruntled employee about financial issues",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss and propose a set of signs that could be used to identify possible suspicious behaviours from insiders."
+    }, {
+        "time": "46:45",
+        "time_min": 46,
+        "time_secs": 2805,
+        "duration": "1",
+        "description": "Passengers get out of the vehicle",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Passengers", "Negative"],
+            ["Park", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss about the potential risks for users that an irresponsible development may generate. For instance, what responsability do companies over the harm that they may cause? e.g. Facebook and malware or fake news?"
+    }, {
+        "time": "47:00",
+        "time_min": 47,
+        "time_secs": 2820,
+        "duration": "1",
+        "description": "Disgruntled employee is planning his attack",
+        "stride": ["-", "t", "-", "-", "d", "e"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Attacks from insiders rearely come without any warning or evidence. Discuss the sources of evidence (technical and behavioural) that could be used to detect malicious insiders. "
+    }, {
+        "time": "50:30",
+        "time_min": 50,
+        "time_secs": 3030,
+        "duration": "1",
+        "description": "Tour is cancelled due to safety reasons (storm).",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Park", "Positive"],
+            ["Visitors", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss how a risk assessment process would produce an outcome like the one shown in the movie. Which are the risks? and the controls put in place to avoid them? Is this part of Business Continuity?"
+    }, {
+        "time": "51:25",
+        "time_min": 51,
+        "time_secs": 3085,
+        "duration": "1",
+        "description": "Insider is about to execute the attack",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "asset", "access", "-", "-", "operations", "-", "system", "-", "incident", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss how would you categorise or list the threats that may be caused by a malicoius insider."
+    }, {
+        "time": "53:00",
+        "time_min": 53,
+        "time_secs": 3180,
+        "duration": "4",
+        "description": "Nedry executes program that deactivates the park security so he can steal the embryos",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "asset", "access", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss how an insider can affect other organisation assets to get to their goal and how this could be used as a detection tool. What about honeypots for insiders?"
+    }, {
+        "time": "54:30",
+        "time_min": 54,
+        "time_secs": 3270,
+        "duration": "1",
+        "description": "The system raises a security alert. Nedry told them to expect glitches so they don't do anything.",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "asset", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the controls that a company could put in place to avoid the damage caused by an insider"
+    }, {
+        "time": "54:50",
+        "time_min": 54,
+        "time_secs": 3290,
+        "duration": "1",
+        "description": "Nedry steals the embrios",
+        "stride": ["-", "-", "-", "i", "-", "e"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss how the company (INGEN) could use the different logs in the park systems to prove that Nedry was responsible for the breach. Discuss also the consequences of stealing IP from a company in this specific case."
+    }, {
+        "time": "55:50",
+        "time_min": 55,
+        "time_secs": 3350,
+        "duration": "1",
+        "description": "Fences start to fail and Nedry leaves the compound",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss about policies to avoid theft of IP through removable media? Does this kind of disguise used by Nedry remind you of any other cases? (Snowden or Manning)"
+    }, {
+        "time": "56:30",
+        "time_min": 56,
+        "time_secs": 3390,
+        "duration": "1",
+        "description": "Arnold tries to fix the issue from Nerdy's station. The desk is a complete mess.",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["Nerdy", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss how a clean desk policy can improve the security of an organisation."
+    }, {
+        "time": "56:40",
+        "time_min": 56,
+        "time_secs": 3400,
+        "duration": "1",
+        "description": "No access control in Nerdy's machine",
+        "stride": ["s", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Nerdy", "Very negative"],
+            ["Park", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the consequences of not having access control in the organisation computers (outsiders, insiders beinb able to access each other's computer). "
+    }, {
+        "time": "57:30",
+        "time_min": 57,
+        "time_secs": 3450,
+        "duration": "1",
+        "description": "Arnold gets access denied when trying to fix the fences. Arnold gets locked out after too many attempts. ",
+        "stride": ["-", "-", "-", "-", "d", "e"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["Nerdy", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "This is one of the examples. In this case, Nerdy creates its own access control mechanism, which makes impossible for Arnold to get into the machine. Discuss what are the consequences of having an employee, IT manager/admin, etc. with too much information. "
+    }, {
+        "time": "1:01:00",
+        "time_min": 61,
+        "time_secs": 3660,
+        "duration": "1",
+        "description": "The T-Rex destroys the fence",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["T-Rex", "Positive"],
+            ["Park", "Negative"],
+            ["Visitors", "Very negative"]
+        ],
+        "discussion": "Would this kind of event qualify as something you would include under a disaster recovery plan? Discuss a possible recovery plan you would create for the park (doesn't it help you to actually find other weaknesses within the park?)."
+    }, {
+        "time": "1:07:00",
+        "time_min": 67,
+        "time_secs": 4020,
+        "duration": "1",
+        "description": "Arnold is analysing the system to check what's wrong",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "It is slightly late to try to fix the system right? Discuss how an incident response team should deal with the situation in this case."
+    }, {
+        "time": "1:07:50",
+        "time_min": 67,
+        "time_secs": 4070,
+        "duration": "1",
+        "description": "Arnold realises he can get the system back online without Nerdy",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the possible policies/procedures/rules that could be implemented to avoid employees having too much power within the company. "
+    }, {
+        "time": "1:26:00",
+        "time_min": 86,
+        "time_secs": 5160,
+        "duration": "1",
+        "description": "Lex says to his brother that she doesn't want to be called a nerd. She wants to be called a hacker. ",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Lex ", "Neutral"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Althought not strictly related to information security events, this scene shows, in 1993, the problems and issues of mis representation that have led to the hughe Genre bias that we are suffering in information security today. Discuss how popular culture and social media have affected the genre balance in a field like cyber security"
+    }, {
+        "time": "1:27:30",
+        "time_min": 87,
+        "time_secs": 5250,
+        "duration": "1",
+        "description": "Grant finds out that some dinousaurs can change genre because of the frog DNA.",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This is the proof that scientists did not properly analysed all the risks of using DNA for clonning. It is clear that this mistake has effects on the breeding policy. "
+    }, {
+        "time": "1:28:00",
+        "time_min": 88,
+        "time_secs": 5280,
+        "duration": "1",
+        "description": "Hammond says that the only way of fising the issue is by resetting the system, which is too risky.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "continuity", "-"],
+        "parties": [
+            ["Park", "Very negative"],
+            ["Visitors", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the need of testing the incident response, BCP and DR."
+    }, {
+        "time": "1:29:00",
+        "time_min": 89,
+        "time_secs": 5340,
+        "duration": "1",
+        "description": "A contingency is mentioned. The dionasours are born with a deficit of a proteint that is only available in the park.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "system", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Dinosaurs", "Negative"],
+            ["Park", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Define backdoor and killswitch. What is this? Discuss their usefulnes in the context of an incident/disaster recovery."
+    }, {
+        "time": "1:29:34",
+        "time_min": 89,
+        "time_secs": 5374,
+        "duration": "1",
+        "description": "They shut down the system but not everything comes back online",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "It is clear that they didn't properly developed and tested the BCP or DR. Discuss how would you have developed and tested these."
+    }, {
+        "time": "1:35:00",
+        "time_min": 95,
+        "time_secs": 5700,
+        "duration": "1",
+        "description": "The process to reset the park is quite complicated",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "system", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Park", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss how these complex procedures can have an effect on disaster recovery, which in general will need to be quick"
+    }, {
+        "time": "1:48:00",
+        "time_min": 108,
+        "time_secs": 6480,
+        "duration": "1",
+        "description": "Lex uses the computer system to active the locks again (under Physical Security).",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Park", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "It seems that at least, the controls to activate the locks are under a proper category which helps Lex to activate them. Discuss how a good organisation of the IT security can help employees do their job better. Usable security."
+    }]
+}

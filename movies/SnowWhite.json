@@ -1,0 +1,270 @@
+{
+    "title": "Snow White",
+    "events": [{
+        "time": "4:11",
+        "time_min": 4,
+        "time_secs": 251,
+        "duration": "1",
+        "description": "Snow White tells a secret to the pigeons",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "cryptography", "-", "-", "comms", "-", "supplier", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Although initially this could be seen as a good thing, the fact is that Snow White doesn't know if the pigeons can ge trusted, so this may be a potential data breach. Discuss the tools that a company can use to enforce that all data shared with a third party is not misused"
+    }, {
+        "time": "6:22",
+        "time_min": 6,
+        "time_secs": 382,
+        "duration": "1",
+        "description": "Queen sees the Prince singing to Snow White",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Very negative"],
+            ["Prince", "Very negative"],
+            ["Queen", "Positive"]
+        ],
+        "discussion": "The fact that the queen knows that something is going on between the Snow White and the Prince pushes her to act against Snow White. Discuss the mechanisms that the Prince and Snow White could use to communicate without the queen knowing."
+    }, {
+        "time": "7:40",
+        "time_min": 7,
+        "time_secs": 460,
+        "duration": "1",
+        "description": "The Queen asks the Hunter to kill Snow White",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "organization", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "compliance"],
+        "parties": [
+            ["Queen", "Very negative"],
+            ["Hunter", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": "The hunter is put in a very difficult position when the queen asks him to perform something illegal. What do you think the hunter should do? Discuss what policies, controls or procedures could be put in place to avoid such situations within a company."
+    }, {
+        "time": "9:00",
+        "time_min": 9,
+        "time_secs": 540,
+        "duration": "1",
+        "description": "The hunter is not capable of killing snow white and brings a fake heart to the queen ",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "organization", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "compliance"],
+        "parties": [
+            ["Hunter", "Negative"],
+            ["Queen", "Negative"],
+            ["Snow White", "Positive"]
+        ],
+        "discussion": "The hunter decides to fail on purpose (but does not report). This and the previous event also show  how the leadership of an organisation can impact the way the organisation works. In this case, the queen doesn't care about law and regulation, and that has a lot of impact on how things are done in the realm. Discuss the effect of the security posture of the senior managment in the rest of the organization."
+    }, {
+        "time": "11:00",
+        "time_min": 11,
+        "time_secs": 660,
+        "duration": "1",
+        "description": "Animals run away when Snow White awakes",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "supplier", "incident", "-", "-"],
+        "parties": [
+            ["Animals", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Animals see Snow White as a risk and run away. Do you think the animlas acted correctly? Bear in mind that at the beginning Snow White trusted the pigeons... Discuss other possible outcomes of this scene and how risk and the animals risk apetite could be involved in them."
+    }, {
+        "time": "12:00",
+        "time_min": 12,
+        "time_secs": 720,
+        "duration": "1",
+        "description": "Snow White follows the animals",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "-", "supplier", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This scene shows again the non-symetric trust between the animals and Snow White. It is very clear that Snow White doesn't have a proper information security training. Discuss how a party can take advantage of such non-symetric trust and try to envision a system that could avoid those situations from happening. "
+    }, {
+        "time": "15:00",
+        "time_min": 15,
+        "time_secs": 900,
+        "duration": "1",
+        "description": "Snow White enters a house without permission",
+        "stride": ["-", "-", "-", "i", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Negative"],
+            ["Animals", "Neutral"],
+            ["Dwarfs", ""]
+        ],
+        "discussion": "There are several things in this scene. First, Snow White enters a place she doesn't know anything about. Considering the extreme situation she is in, this could be seen as somehting normal. The animals know the dwarfs so it is not problematic for them. In addition, this scene gives a hint about the security posture of the dwarfs. They do not care about their security. "
+    }, {
+        "time": "22:00",
+        "time_min": 22,
+        "time_secs": 1320,
+        "duration": "1",
+        "description": "After a day of hard work. The dwarfs close the vault but leave the key by the door.",
+        "stride": ["-", "t", "-", "i", "-", "e"],
+        "isocontrols": ["policies", "organization", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Dwarfs", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "No checking that the door has been closed by another dwarf. In this case, the leadership couldn't care less about security. This is surprising given that there is one dwarf that is always complainining. Depict a system which would allow the organisation to improve its security from the suggestions of their own workers. How this would work in an horizontal company? Can you extrapolate this to a share based company?"
+    }, {
+        "time": "26:00",
+        "time_min": 26,
+        "time_secs": 1560,
+        "duration": "1",
+        "description": "Dwarfs make noise when entering the house",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Dwarfs", "Negative"],
+            ["Snow White", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Although the dwarfs are entering their own place, this is now occupied by snow white and she could use the sound as an indicator to detect them. Discuss the possible controls to detect that someone is trying to breach a system. (hint: it will greatly depend on the attacker and the vector)."
+    }, {
+        "time": "27:00",
+        "time_min": 27,
+        "time_secs": 1620,
+        "duration": "1",
+        "description": "Dwarfs analyse the house for evidence",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Dwarfs", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "The dwarfs notice the breach and start looking for evidence. This is a good incident response but of course this is done after they realise they had a breach. Discuss what are the actions that you would take once you detect that there has been a breach. (what about communications?). "
+    }, {
+        "time": "28:00",
+        "time_min": 28,
+        "time_secs": 1680,
+        "duration": "1",
+        "description": "One of the dwarfs warns against the food being poisoned",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "system", "-", "incident", "-", "-"],
+        "parties": [
+            ["Dwarfs", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This could be similar to what happens if a company gets hacked. In this case the food could be like malware. The Incident response team has two ways of approching the investigation: One to just look for evidence and the other one to make hypothesis and test if they are true. Discuss the pros and cons of each approach."
+    }, {
+        "time": "35:00",
+        "time_min": 35,
+        "time_secs": 2100,
+        "duration": "1",
+        "description": "Grumpy complaints about not trusting Snow White",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "supplier", "-", "-", "-"],
+        "parties": [
+            ["Dwarfs", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "In some cases, trust can have a great effect on business relationships. Discuss the effect of trust in these relationships and the possible ways of mitigating the risks of establishing relationships when there is no complete trus. Hint: there shouldn't be complete trust :)"
+    }, {
+        "time": "46:00",
+        "time_min": 46,
+        "time_secs": 2760,
+        "duration": "1",
+        "description": "The Queen realises his employee hasn't completed the job",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "continuity", "-"],
+        "parties": [
+            ["Queen", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "When she realises she decides to start a plan that will finally allow her to reach her goal. This is a kind of business continuity plan for her. Discuss the importance of business continuity plans within an organisation. "
+    }, {
+        "time": "48:00",
+        "time_min": 48,
+        "time_secs": 2880,
+        "duration": "2",
+        "description": "The Queen transforms into an old lady to perpetrate the attack",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Very negative"],
+            ["Queen ", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "The queen is taking the identity of another person to take advantage of the how easy it is to gain trust from Snow White. This is showing one of the main weakenss of snow white. She trusts people very easily. Discuss the effect that this kind of behaviour can have on a company if followed by an employee within the company? How can you change that attitude from an employee?"
+    }, {
+        "time": "1:00:00",
+        "time_min": 60,
+        "time_secs": 3600,
+        "duration": "",
+        "description": "The Queen poisons the apple",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Negative"],
+            ["Queen", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "The Queen creates a kind of malware in the form of an apple. Discuss the possible effects that malware could have within a company. Analyse the different kinds of malware and how they could affect the company (targeted, generic, ransomware, etc.)"
+    }, {
+        "time": "1:01:00",
+        "time_min": 61,
+        "time_secs": 3660,
+        "duration": "1",
+        "description": "The queen also mentions the only anti-dote to the poison",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Positive"],
+            ["Queen", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "This is very similar to the kill switch that some pieces of malware have. The queen is giving away the kill switch in this scende. What is a kill switch? Why do you think they are used by cyber criminals?"
+    }, {
+        "time": "1:04:00",
+        "time_min": 64,
+        "time_secs": 3840,
+        "duration": "1",
+        "description": "Grumpy warns Snow White not to trust people",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Snow White", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This is an example of an awareness course. Discuss the different methods avialable to increase cyber security awareness. Which ones are more effective? and cost-effective? "
+    }, {
+        "time": "1:07:00",
+        "time_min": 67,
+        "time_secs": 4020,
+        "duration": "5 min",
+        "description": "The queen performs a social engineering attack over Snow White, poisoning her",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "-", "supplier", "incident", "-", "-"],
+        "parties": [
+            ["Snow White", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "The animals detected the attack but Snow White doesn't realise about it. The animals run to warnd the dwarfs but they are late. This shows two things. First, how a social engineering attack works, and how to respond when it happens (the animals). Are the animals an intrustion detection or prevention system? What is the different between both? What would you change to allow the animals to avoid the attack?"
+    }, {
+        "time": "1:15:00",
+        "time_min": 75,
+        "time_secs": 4500,
+        "duration": "4",
+        "description": "The Dwarfs put Snow White into a glass coffin to avoid contamination and the prince comes to wake her up",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["Snow White", "Positive"],
+            ["Dwarfs", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "This is a very good example of chain of custody and keeping evidence integrity. Discuss what steps would you follow to ensure that the evidence of an attack is properly processed to be acceptable in court. How would you acomplish this and at the same time be back into business as soon as possible?"
+    }]
+}

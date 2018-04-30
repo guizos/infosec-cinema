@@ -1,0 +1,214 @@
+{
+    "title": "Avengers Assemble",
+    "events": [{
+        "time": "1:29",
+        "time_min": 1,
+        "time_secs": 89,
+        "duration": "1",
+        "description": "Emergency evacuation of the base is ordered after an attack",
+        "stride": ["-", "t", "-", "i", "-", "-"],
+        "isocontrols": ["policies", "organization", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["SHIELD group", "Very negative"],
+            ["Loki", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss security measures that a military base should have in place in case of an attack."
+    }, {
+        "time": "3:54",
+        "time_min": 3,
+        "time_secs": 234,
+        "duration": "1",
+        "description": "Hawkeye suggests the portal has been tampered with from space – “Doors open from both sides.”\n",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "asset", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Shield Group", "Very negative"],
+            ["Loki", "Very positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the concept of entry points and how to protect them."
+    }, {
+        "time": "15:12",
+        "time_min": 15,
+        "time_secs": 912,
+        "duration": "2",
+        "description": "A little girl lures Dr Banner is a small house in the outskirts of the town by pretending her father is sick.",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Dr. Banner", "Negative"],
+            ["SHIELD ", "Positive"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "22:23",
+        "time_min": 22,
+        "time_secs": 1343,
+        "duration": "1",
+        "description": "Ironman is interfering with transmission lines to cut energy supply to his own building.\n",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Stark building", "Neutral"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Interesting discussion on compromise of infrastructure."
+    }, {
+        "time": "24:41",
+        "time_min": 24,
+        "time_secs": 1481,
+        "duration": "1",
+        "description": "Jarvis’s protocols are overridden by a member of SHIELD.",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Stark", "Negative"],
+            ["SHIELD", "Positive"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "34:00",
+        "time_min": 34,
+        "time_secs": 2040,
+        "duration": "1",
+        "description": "A member of SHIELD mentions the tactics adopted to locate and recover the Tesseract, including sweeping cameras, cell-phones and designing a tracking algorithm.",
+        "stride": ["s", "-", "-", "i", "-", "e"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "operations", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["SHIELD", "Positive"],
+            ["Loki", "Negative"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "37:30",
+        "time_min": 37,
+        "time_secs": 2250,
+        "duration": "1",
+        "description": "Loki uses a device to extract the eyeball features of an individual who has access to a site that Hawkeye is attacking.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Loki and Hawkeye", "Very positive"],
+            ["German man", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss biometric authentication, and the properties a biometric feature should have."
+    }, {
+        "time": "54:01",
+        "time_min": 54,
+        "time_secs": 3241,
+        "duration": "3",
+        "description": "Stark and Dr. Banner are searching through SHIELDS files to understand what is happening. This includes “bypassing the mainframe” and “using a decryption program into SHIELD’s secure files”.\n",
+        "stride": ["s", "-", "-", "i", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "cryptography", "-", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The Avengers", "Positive"],
+            ["SHIELD", "Negative"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "58:10",
+        "time_min": 58,
+        "time_secs": 3490,
+        "duration": "1",
+        "description": "Captain America enters the secure storage area without authorisation.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The Avengers", "Positive"],
+            ["SHIELD", "Negative"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:03:27",
+        "time_min": 63,
+        "time_secs": 3807,
+        "duration": "1",
+        "description": "A virus is detected on SHIELD’s systems.",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "operations", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["SHIELD", "Very negative"],
+            ["Loki", "Very positive"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:06:58",
+        "time_min": 66,
+        "time_secs": 4018,
+        "duration": "1",
+        "description": "Hawkeye’s plane is asked for access codes, but are left through in any case.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["SHIELD", "Very negative"],
+            ["Loki", "Very positive"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:16:18",
+        "time_min": 76,
+        "time_secs": 4578,
+        "duration": "1",
+        "description": "Phil uses his iris as form of authentication to access restricted area.",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["SHIELD", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:34:10",
+        "time_min": 94,
+        "time_secs": 5650,
+        "duration": "1",
+        "description": "Unauthorised departure of plane from base (Avengers)",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "asset", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The Avengers", "Positive"],
+            ["Rogue bird", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:58:00",
+        "time_min": 118,
+        "time_secs": 7080,
+        "duration": "1",
+        "description": "Unauthorised departure of plane from base (Rogue Bird)",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "asset", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The Avengers", "Very negative"],
+            ["Rogue bird", "Positive"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }, {
+        "time": "1:55:50",
+        "time_min": 115,
+        "time_secs": 6950,
+        "duration": "1",
+        "description": "The scientist has built “a safety to cut the power source” in the Tesseract.",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Humans & the Avengers", "Very positive"],
+            ["Loki", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": ""
+    }]
+}

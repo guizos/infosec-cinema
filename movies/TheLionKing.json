@@ -1,0 +1,102 @@
+{
+    "title": "The Lion King",
+    "events": [{
+        "time": "09:43",
+        "time_min": 9,
+        "time_secs": 583,
+        "duration": "2",
+        "description": "Morning bulletin by Zazu to Mufasa.",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["policies", "organization", "-", "asset", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The kingdom", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the importance of an audit in a system."
+    }, {
+        "time": "10:34",
+        "time_min": 10,
+        "time_secs": 634,
+        "duration": "1",
+        "description": "Mufasa and Simba simulate an attack against Zazu.",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The lions", "Positive"],
+            ["Zazu", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the benefits of a simulation attack, and what needs to be put in place for the simulation to be effective."
+    }, {
+        "time": "13:00",
+        "time_min": 13,
+        "time_secs": 780,
+        "duration": "1",
+        "description": "Simba and Nala play social engineering skills to get permission to go to the Elephant’s Graveyard.",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Simba and Nala", "Positive"],
+            ["The mothers", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss examples of social engineering."
+    }, {
+        "time": "18:52",
+        "time_min": 18,
+        "time_secs": 1132,
+        "duration": "1",
+        "description": "Simba and Nala leave their realm and enter a territory not under the protection of the Lion King.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Simba and Nala", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the dangers of accessing areas with no security."
+    }, {
+        "time": "31:05",
+        "time_min": 31,
+        "time_secs": 1865,
+        "duration": "2",
+        "description": "Gnus are tricked to run towards the canyon by the hyaenas, causing a dangerous and dramatic situation for Simba.",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Gnus", "Neutral"],
+            ["Hyaenas", "Positive"],
+            ["Simba", "Very negative"]
+        ],
+        "discussion": "Discuss the effects of erratic behaviour on the security of the parties involved, and how one should react to a situation in which one’s security is threatened."
+    }, {
+        "time": "40:50",
+        "time_min": 40,
+        "time_secs": 2450,
+        "duration": "1",
+        "description": "Timon identifies the animal is a lion.\n",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Timon", "Positive"],
+            ["Simba", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "Discuss what mechanism can be used to identify a potential threat or attacker, and the benefits and shortcomings in doing so."
+    }, {
+        "time": "50:29",
+        "time_min": 50,
+        "time_secs": 3029,
+        "duration": "1",
+        "description": "Flower petals allow Rafiki to realize Simba is alive.\n",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Simba and Rafiki", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss types of secret communication (from steganography to cryptography), and risks associated to them"
+    }]
+}

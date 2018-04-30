@@ -1,0 +1,186 @@
+{
+	"title": "The Exorcist",
+	"events": [{
+		"time": "08:45",
+		"time_min": 8,
+		"time_secs": 525,
+		"duration": "1",
+		"description": "Father Merrin arrives to the excavation and two security guards appear thinking he is an intruder. It is just a false alarm",
+		"stride": ["-", "t", "-", "i", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["The Excavation", "Positive"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "In this case the excavation is properly protected but that may not be the case of other facilities that are left at night without surveillance. Discuss the different security measures you would put in place to avoid an intrusion after working hours. "
+	}, {
+		"time": "11:00",
+		"time_min": 11,
+		"time_secs": 660,
+		"duration": "1",
+		"description": "Chris hears some strange sounds in the house and think there are rats in the atic",
+		"stride": ["s", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Chris MacNeil", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "Chris thinks this is a false alarm and doesn't investigate further. Discuss what are the main the procedure you would put in place to deal with similar situations in a cyber scenario and when would you consider them to be false alarms? What is the problem of getting many false alarms in an intrusion detection system?"
+	}, {
+		"time": "15:00",
+		"time_min": 15,
+		"time_secs": 900,
+		"duration": "1",
+		"description": "Chris eavesdrops a conversation between Father Karras and another priest.",
+		"stride": ["-", "-", "-", "i", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "comms", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Father Karras", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "It seems that both priests are talking about something sensitive. Shouldn't they be having this conversation in a more private place? How do you avoid people having conversation in public spaces about confidential information? How do you make them aware that is wrong?"
+	}, {
+		"time": "25:00",
+		"time_min": 25,
+		"time_secs": 1500,
+		"duration": "1",
+		"description": "Father Karras tells another priest that he thinks he is unfit for the job",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["The Church", "Positive"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "This may seem a very non-security related event but this is a clear sign of a problem with one of the employees of the organisation, in this case The Church. Insiders do not become malicious or start making mistakes espontaniously. There are indicators and problems that arise well before the real issue appears. Discuss which kinds of indicators would you be looking for to detect the possible different kinds of insiders."
+	}, {
+		"time": "30:00",
+		"time_min": 30,
+		"time_secs": 1800,
+		"duration": "",
+		"description": "Someone (or something) has entered the church and vandalized a Virgin Mary statue",
+		"stride": ["-", "t", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["The Church", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "Security personal to watch premises like a church are very expensive and therefore they are not used to protect such assets. Discuss the possible measures that you could put in place to deploy a cost-effective method to watch many low-security locations."
+	}, {
+		"time": "33:00",
+		"time_min": 33,
+		"time_secs": 1980,
+		"duration": "2",
+		"description": "First symptoms that something is wrong with Regan appear and she is taken to a hospital",
+		"stride": ["-", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Regan", "Very negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "We can make the analogy of the demon taking over Regan (doing a kind of escalation of privilege). Although she is taking to the hospital (good incident response), the people there do not act properly. During her stay there, she shows more signs of whatever is happening to her but they only provide her with stimulants"
+	}, {
+		"time": "43:00",
+		"time_min": 43,
+		"time_secs": 2580,
+		"duration": "1",
+		"description": "Regan is given the wrong diagnosis and treatment at the hospital",
+		"stride": ["-", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Regan", "Very negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "Again, Chris, the mother, behaves correctly taking Regan to the hospital but they attribute this to a different issue and therefore are having a false positive. Discuss the effects of false positives in a detection system put in place to avoid virus infections. "
+	}, {
+		"time": "56:00",
+		"time_min": 56,
+		"time_secs": 3360,
+		"duration": "1",
+		"description": "Sharon should be taking care of Regan but she delegates to Burke Dennings. ",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "operations", "-", "-", "supplier", "-", "-", "-"],
+		"parties": [
+			["Sharon", "Negative"],
+			["Burke Dennings", "Negative"],
+			["", ""]
+		],
+		"discussion": "This clearly shows how difficult it is sometimes to enforce policies within organisations. When we write a policy we generally do not take into account all cases and there may be cases where people go around the policy to complete their jobs. Discuss about the effectiveness of policies and how can you ensure that a policy is effective. "
+	}, {
+		"time": "1:31:00",
+		"time_min": 91,
+		"time_secs": 5460,
+		"duration": "1",
+		"description": "Regan reacts violently to 'fake' holy water",
+		"stride": ["-", "t", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "comms", "system", "-", "-", "-", "compliance"],
+		"parties": [
+			["Father Karras", "Negative"],
+			["The Demon", "Positive"],
+			["", ""]
+		],
+		"discussion": "The demon is trying to mislead Father Karras to think she is not possessed. This could be very similar to what Honeypots try to do but in the oppossite way. Of course, attackers know a lot of techniques to distinguish honey pots from other real devices. How could you make that more difficult? In a similar way, attackers can also leave fake clues to mislead investigators (attribution, etc.). How would you try to avoid those and how can you be sure that for instance a piece of malware was developed by a specific country?"
+	}, {
+		"time": "1:33:00",
+		"time_min": 93,
+		"time_secs": 5580,
+		"duration": "1",
+		"description": "A 'Help me' message appears in Regan abdomen",
+		"stride": ["-", "-", "-", "i", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "cryptography", "-", "-", "comms", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Regan", "Positive"],
+			["The Demon", "Negative"],
+			["Father Karras", "Positive"]
+		],
+		"discussion": "Regan uses a kind of steganography to communicate with Father Karras. As she has no control over her speech, she decides to use a method of communication that the demon does not control. Discuss how could you avoid those kinds of communication from happening in an organisation to for example leak information."
+	}, {
+		"time": "1:38:00",
+		"time_min": 98,
+		"time_secs": 5880,
+		"duration": "1",
+		"description": "Father Merrin warns Father Karras that the demon is deceptive and will try to trick him",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "operations", "comms", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Father Karras", "Positive"],
+			["The Demon", "Negative"],
+			["", ""]
+		],
+		"discussion": "Fahter merrin is actually providng Father Karras with threat intelligence that can be useful when fighting the demon. Do you know any threat intelligence sharing system? What are the problems that companies may be facing when implementing them. How do you think that affects the business position of an informatin security provider?"
+	}, {
+		"time": "1:52:00",
+		"time_min": 112,
+		"time_secs": 6720,
+		"duration": "1",
+		"description": "The demon poses as Father Karras recently deceased mother.",
+		"stride": ["s", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Father Karras", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "The demon is trying to affect Father Karras behaviour by posing as his mother, which has an initial obvious effect on him. Discuss how identify spoofing can be used to attack an organisation (both in the real world and cyber). "
+	}, {
+		"time": "1:55:00",
+		"time_min": 115,
+		"time_secs": 6900,
+		"duration": "2",
+		"description": "The demon takes out Father Karras amulet, which allows him to posses him. ",
+		"stride": ["-", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "-", "-", "access", "-", "-", "operations", "-", "system", "-", "-", "-", "-"],
+		"parties": [
+			["Father Karras", "Very negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "The amulet of father Karras, seemed to be his antivirus against the possession by the demon. The moment he takes it out, he has no protection against it. Discuss the kind of systems that offer a similar functionality in the cyber world."
+	}]
+}

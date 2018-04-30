@@ -1,0 +1,130 @@
+{
+    "title": "E.T.",
+    "events": [{
+        "time": "06:43",
+        "time_min": 6,
+        "time_secs": 403,
+        "duration": "1",
+        "description": "An alien ship leaves Earth as an emergency procedure when humans arrive nearby.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Aliens on ship", "Positive"],
+            ["ET", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss pros and cons of emergency procedures.\n"
+    }, {
+        "time": "09:42",
+        "time_min": 9,
+        "time_secs": 582,
+        "duration": "1",
+        "description": "ET manages to get into the family’s shed.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["ET", "Positive"],
+            ["Elliot's family", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "Discuss access control concerns on a residential property, and the risks unauthorised access could bring.\n"
+    }, {
+        "time": "11:58",
+        "time_min": 11,
+        "time_secs": 718,
+        "duration": "1",
+        "description": "Michael incorrectly identifies the footprints on the ground as belonging to a coyote.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Elliot’s family", "Negative"],
+            ["ET", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the importance of correctly identifying a potential intruder."
+    }, {
+        "time": "13:10",
+        "time_min": 13,
+        "time_secs": 790,
+        "duration": "1",
+        "description": "When Elliot exits the house to look for the intruder, both the house and the shed’s doors are unlocked.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Elliot", "Negative"],
+            ["ET", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the security of residential property and the issues unlocked doors could lead to."
+    }, {
+        "time": "14:15",
+        "time_min": 14,
+        "time_secs": 855,
+        "duration": "1",
+        "description": "Elliot follows footprints to find the intruder.",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["ET", "Negative"],
+            ["Elliot", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the topic of traceability, and in what context this can be considered a positive or negative property to have."
+    }, {
+        "time": "15:34",
+        "time_min": 15,
+        "time_secs": 934,
+        "duration": "1",
+        "description": "Elliot leaves a trace of sweets for the intruder to follow.",
+        "stride": ["s", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Elliot", "Positive"],
+            ["ET", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss method of social engineering used to lead a party to behave in a specific way, in line with the social engineer’s goals. Discuss how these are used to lure attackers into systems (honeypots) and their usefulness.\n"
+    }, {
+        "time": "56:00",
+        "time_min": 56,
+        "time_secs": 3360,
+        "duration": "2",
+        "description": "The police are performing surveillance of private communications amongst the residents of an area identified as potential hiding place of an alien. ",
+        "stride": ["s", "-", "-", "i", "-", "e"],
+        "isocontrols": ["policies", "organization", "-", "-", "-", "-", "physical", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Elliot and Michael", "Negative"],
+            ["The police", "Positive"],
+            ["ET", "Very negative"]
+        ],
+        "discussion": "Discuss the rights of the police to surveil families as they do in the movie, and the expectation of privacy a citizen has.\nFurther discuss this in light of issues of national security."
+    }, {
+        "time": "1:07:41",
+        "time_min": 67,
+        "time_secs": 4061,
+        "duration": "10",
+        "description": "Security forces enter Elliot’s house with no authorization.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "compliance"],
+        "parties": [
+            ["The police", "Neutral"],
+            ["Elliot;s family", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the regulatory aspects of this scene – for instance, why don’t the security forces have a warrant to enter the premises?\n"
+    }, {
+        "time": "1:36:00",
+        "time_min": 96,
+        "time_secs": 5760,
+        "duration": "1",
+        "description": "Michael and Elliot take control of the vehicle holding ET without authorisation.",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Elliot, Michael and ET", "Very positive"],
+            ["Security Forces", "Very negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss what security measures failed for the two boys to be able to drive away with the vehicle."
+    }]
+}

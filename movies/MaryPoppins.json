@@ -1,0 +1,172 @@
+{
+    "title": "Mary Poppins",
+    "events": [{
+        "time": "06:59",
+        "time_min": 6,
+        "time_secs": 419,
+        "duration": "1",
+        "description": "The Admiral tells his assistant to log the movements on Cherry Tree Lane.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The Admiral", "Positive"],
+            ["The residents", "Positive"],
+            ["The visitor", "Neutral"]
+        ],
+        "discussion": "Discuss the technique of logging actions, and its benefits in the context of audits."
+    }, {
+        "time": "23:11",
+        "time_min": 23,
+        "time_secs": 1391,
+        "duration": "1",
+        "description": "A strong wind blows all the candidate nannies away.\n",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Mary Poppins", "Positive"],
+            ["Other nannies", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss adversarial strategies to eliminate competition, and what you consider fair or not.\n"
+    }, {
+        "time": "28:50",
+        "time_min": 28,
+        "time_secs": 1730,
+        "duration": "2",
+        "description": "Mary Poppins empties her bag, from which she extracts all sorts of things, but which apparently seems empty. She states “Never judge things by their appearance”.\n",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Mary Poppins", "Positive"],
+            ["Children", "Neutral"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the techniques used for hiding information, e.g., steganography, and the motivations behind a party deciding to use such techniques."
+    }, {
+        "time": "35:35",
+        "time_min": 35,
+        "time_secs": 2135,
+        "duration": "1",
+        "description": "Whilst tidying the nursery, Michael is trapped in the wardrobe and cannot get out.",
+        "stride": ["-", "t", "-", "-", "d", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Michael", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Discuss the security backfiring effects of using certain practices.\n"
+    }, {
+        "time": "36:54",
+        "time_min": 36,
+        "time_secs": 2214,
+        "duration": "1",
+        "description": "Mary Poppins opens the front door by simply tapping her umbrella on the floor.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Mary Poppins", "Positive"],
+            ["The house residents", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the importance of controlling access to a resource, and how access can be granted or denied (authentication triad)."
+    }, {
+        "time": "38:27",
+        "time_min": 38,
+        "time_secs": 2307,
+        "duration": "1",
+        "description": "Burt recognizes Mary Poppins simply by her profile, which he draws with chalk on the pavement.\n",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Mary Poppins", "Positive"],
+            ["Burt", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the advantages and disadvantages of biometric identification."
+    }, {
+        "time": "54:56",
+        "time_min": 54,
+        "time_secs": 3296,
+        "duration": "1",
+        "description": "Michael and Jane are wearing a safety belt on the merry-go-round, while Mary and Burt are not.\n",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The children", "Very positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "This simple security mechanism may go unnoticed, but it is important for the safety of the young horse riders.\n"
+    }, {
+        "time": "1:31:00",
+        "time_min": 91,
+        "time_secs": 5460,
+        "duration": "3",
+        "description": "Michael is bullied into opening a bank account",
+        "stride": ["-", "-", "-", "-", "d", "e"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Michael", "Very negative"],
+            ["The bankers", "Very positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the impact of peer-pressure on decision which affect the security of personal property, information and well-being.\n"
+    }, {
+        "time": "1:35:00",
+        "time_min": 95,
+        "time_secs": 5700,
+        "duration": "2",
+        "description": "Panic erupts in the bank, as customers fear the bank has no cash. Security procedures are immediately put in place, e.g., closing the bank.",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["policies", "organization", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "continuity", "-"],
+        "parties": [
+            ["The clients", "Negative"],
+            ["The bank", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "In a situation of panic, security measures are often put in place. Discuss examples of this, debating benefits and shortcomings of such measures.\n"
+    }, {
+        "time": "1:43:19",
+        "time_min": 103,
+        "time_secs": 6199,
+        "duration": "1",
+        "description": "Both Michael and Jane accidentally are sucked up a chimney.\n",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The children", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Physical security is often linked to knowledge of information, and disclosing this information is important. A lack of communication, like in the case of this scene, caused the two children to place themselves in potential danger.\n"
+    }, {
+        "time": "1:53:13",
+        "time_min": 113,
+        "time_secs": 6793,
+        "duration": "1",
+        "description": "The Admiral shoots fireworks to the chimney sweepers, and they escape.",
+        "stride": ["-", "t", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["The admiral", "Positive"],
+            ["The chimmey sweepers", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the security procedures to be adopted in case of an attack such as the one in the scene.\n"
+    }, {
+        "time": "2:05:00",
+        "time_min": 125,
+        "time_secs": 7500,
+        "duration": "1",
+        "description": "Mr Banks is escorted to the meeting room in the bank.\n",
+        "stride": ["-", "-", "-", "-", "d", "-"],
+        "isocontrols": ["policies", "-", "hr", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Mr. Banks", "Very negative"],
+            ["The Bank", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "Discuss the topic of revocation of rights and procedures to handle the situation.\n"
+    }]
+}

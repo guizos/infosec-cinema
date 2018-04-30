@@ -1,0 +1,228 @@
+{
+	"title": "101 Dalmatians",
+	"events": [{
+		"time": "06:10",
+		"time_min": 6,
+		"time_secs": 370,
+		"duration": "1",
+		"description": "Pongo changes the time so he and Roger go for a walk and meet Perdita and Anita",
+		"stride": ["-", "t", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "operations", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Roger", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "By changing the time, Pongo is affecting Roger's decision. In a cyber context this could have much greater effects, from triggering automatic updates or processes to making evidence inadmisssible. Discuss the different ways of tampering time within an ISMS, their consequences and how that could be prevented."
+	}, {
+		"time": "23:10",
+		"time_min": 23,
+		"time_secs": 1390,
+		"duration": "1",
+		"description": "Inside a TV show the dogs are watching, Thunder simulates his dead to lure the hunter. ",
+		"stride": ["s", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Thunder", "Positive"],
+			["Hunter", "Negative"],
+			["", ""]
+		],
+		"discussion": "In this case the hunter falls for Thunder scam but this is not always the case. Discuss the goals of a good deception system (attract attacks and learn from them). Also, discuss how can you build an effective deception system so that if fullfils the previously described goals."
+	}, {
+		"time": "28:00",
+		"time_min": 28,
+		"time_secs": 1680,
+		"duration": "3",
+		"description": "Thieves try a socal engienerring attack to steal the puppies. It doesn't work so they go for a brueforce attack. ",
+		"stride": ["s", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "hr", "-", "access", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Miss Birdwell", "Negative"],
+			["Thieves", "Positive"],
+			["", ""]
+		],
+		"discussion": "This is a very good example of the need of layered security. In this case, Miss Birdwell is very well prepared to avoid a social engienering attack but she is not prepared to fight a brute force attack. Of course, it is very difficult to put all controls over Miss Birdwell, so how would you implement a good multi-layered approach to avoid this from happening again?"
+	}, {
+		"time": "28:15",
+		"time_min": 28,
+		"time_secs": 1695,
+		"duration": "1",
+		"description": "The thieves lock Miss Birdwell on the last floor of the house",
+		"stride": ["-", "-", "-", "-", "d", "-"],
+		"isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Miss Birdwell", "Very negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "This is a good example of how a security mechanisms can go against us if we do not have the proper procedures put in place. This is very similar to what happens when an employee or a person losses their password. In some cases this can be even worse, for example when someone looses their phone which is key to enable second factor authentication. Discuss the main usability problems of user authentication systems (CIA triad) and how you could avoid them. "
+	}, {
+		"time": "29:00",
+		"time_min": 29,
+		"time_secs": 1740,
+		"duration": "1",
+		"description": "Miss Birdwell goes to the street asking for help",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Miss Birdwell", "Positive"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "One of the main problems that many companies face is that whenever an incident happens, the escalation procedures are not clear, which gives time to the attacker to do more damage and also puts customers at risk, as they cannot implement any measures to increase their protection. Discuss what are the main pitfalls that may happen during an incident response procedure, their consequences, and how they could be avoided. "
+	}, {
+		"time": "29:50",
+		"time_min": 29,
+		"time_secs": 1790,
+		"duration": "1",
+		"description": "The thieves call Cruella to ask for money but she doesn't want to talk about the crime on the phone because it may be used as evidence.",
+		"stride": ["-", "-", "-", "i", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "comms", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Cruella", "Negative"],
+			["Thieves", "Negative"],
+			["", ""]
+		],
+		"discussion": "This is a good example of criminals being aware of the evidence trail the generally leave behind. is there any place outside the organisation that could be used as evidence for an attack?"
+	}, {
+		"time": "31:50",
+		"time_min": 31,
+		"time_secs": 1910,
+		"duration": "1",
+		"description": "Cruella visits Anita and Roger to say how sorry she is about the incident with the dogs. She is trying to get into the inviestigation",
+		"stride": ["-", "t", "r", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Cruella", "Negative"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "This is a very good example of how some attackers/criminals want to get actively involved in the crime investigation. This could be used as an indicator or compromise or guilt. Discuss what kind of indicators you would look for to identify a possible insider threat."
+	}, {
+		"time": "33:00",
+		"time_min": 33,
+		"time_secs": 1980,
+		"duration": "3",
+		"description": "Dogs bark to transmit the message that the puppies have been stolen. ",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["policies", "-", "-", "-", "-", "-", "-", "operations", "comms", "-", "-", "incident", "continuity", "-"],
+		"parties": [
+			["Pongo and Perdita", "Positive"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "This scene exemplifies very well how interconnected systems work. In this case, the message that is very quickly transmitted is a call for help but virus and misinformation also take advantage of the speed of todays networks. Discuss what could you do to avoid those malicious activities from taking advantage of the network effects on today's interconnected world"
+	}, {
+		"time": "37:00",
+		"time_min": 37,
+		"time_secs": 2220,
+		"duration": "1",
+		"description": "The Colonel wakes up to act on the Twilight Bark",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Colonel", "Positive"],
+			["Pongo and Perdita", "Positive"],
+			["", ""]
+		],
+		"discussion": "This is a very good example of the need of having teams on call to confront and react when an incident happens. Discuss the kind of incident response eams and how to optimise their time on call."
+	}, {
+		"time": "37:30",
+		"time_min": 37,
+		"time_secs": 2250,
+		"duration": "1",
+		"description": "Dogs are capable of authenticate each other just by their characteristic barking",
+		"stride": ["-", "-", "-", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "comms", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Colonel", "Positive"],
+			["", ""],
+			["", ""]
+		],
+		"discussion": "The dogs are using a biometric system to authenticate each other. Discuss the pros and cons of biometric authentication systems and their usage in the enterprise. "
+	}, {
+		"time": "40:00",
+		"time_min": 40,
+		"time_secs": 2400,
+		"duration": "1",
+		"description": "The cat is capable of bypassing the physical barriers that block the access to the old house",
+		"stride": ["-", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["The cat", "Positive"],
+			["The thieves", "Negative"],
+			["", ""]
+		],
+		"discussion": "The cat is capable of bypassing the physical barriers because they were prepared for humans. This tells us that we need to prepare our controls to match the kind of attacker that we may have. Discuss possible examples of controls that would be useless against certain kinds of attackers. For example controls that are put in place to avoid script kiddies or outsiders when the adversary is an insider or has technical knowledge."
+	}, {
+		"time": "42:00",
+		"time_min": 42,
+		"time_secs": 2520,
+		"duration": "2",
+		"description": "The thieves are drunk and cannot properly take care of the puppies",
+		"stride": ["-", "-", "-", "-", "d", "-"],
+		"isocontrols": ["-", "-", "hr", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Thieves", "Very negative"],
+			["The cat", "Positive"],
+			["", ""]
+		],
+		"discussion": "This is a very good example of an innefective control. Because of the lack of monitoring over the control, Cruella cannot know that they are very good at taking care of the puppies. Discuss how can you measure the effectiveness of an Intrusion detection system. "
+	}, {
+		"time": "49:00",
+		"time_min": 49,
+		"time_secs": 2940,
+		"duration": "1",
+		"description": "The controls are also not prepared for the puppies",
+		"stride": ["-", "-", "-", "-", "-", "e"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["Puppies", "Positive"],
+			["Thieves", "Negative"],
+			["", ""]
+		],
+		"discussion": "We can see here that all the layers of protections of Cruellas system are being rendered useless: the outside barriers, the thieves and the door inside are useless for differnt reasons. Even when we have a layered system we need to monitor to make sure it is effective. "
+	}, {
+		"time": "55:00",
+		"time_min": 55,
+		"time_secs": 3300,
+		"duration": "2",
+		"description": "The thieves follow the puppies marks",
+		"stride": ["-", "-", "-", "i", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Puppies", "Very negative"],
+			["Thieves", "Very positive"],
+			["", ""]
+		],
+		"discussion": "The puppies are leaving a trail without knowing (like many attackers in a system). Following the evidence can help you track the attacker. Discuss the different values evidence left on a system can have for a company that was attacked. (rectify vulnerability, judicial, measure impact, etc.)"
+	}, {
+		"time": "1:04:00",
+		"time_min": 64,
+		"time_secs": 3840,
+		"duration": "2",
+		"description": "Pongo tries to erase the puppies marks so the dogs are not followed. Unfortunately, the thieves notice because the marks are only erased on the road. ",
+		"stride": ["-", "t", "r", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+		"parties": [
+			["Pongo", "Positive"],
+			["Thieves", "Negative"],
+			["", ""]
+		],
+		"discussion": "In some cases, attackers, will try to remove the evidence left on the system by employing some anti-forensic technique. What does Pongo behaviour tell us? However, as the movie shoes most of the times there will be some evidence left that will allow us to identify the attacker. Enumerate and discuss the possible anti-forensic techniques that an attacker may use and discuss possible countermeasures for them. "
+	}, {
+		"time": "1:06:00",
+		"time_min": 66,
+		"time_secs": 3960,
+		"duration": "4",
+		"description": "The puppies, Pongo and Perdita use soot to camuflate as a different kind of dog and avoid detection",
+		"stride": ["s", "-", "r", "-", "-", "-"],
+		"isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+		"parties": [
+			["The dalmatians", "Positive"],
+			["The thieves", "Negative"],
+			["", ""]
+		],
+		"discussion": "This kind of attack tries to confuse the thieves and Cruella so they don't know they are actually looking at dalmatians. They are hiding in plain sight, which is a kind of steganography. However the signs show that they are real dalmatians. Discuss how an attacker could compromise an organisation by posing by someone from the inside (masqueraders)."
+	}]
+}

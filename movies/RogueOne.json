@@ -1,0 +1,270 @@
+{
+    "title": "Rogue One: A Star Wars Story",
+    "events": [{
+        "time": "09:25",
+        "time_min": 9,
+        "time_secs": 565,
+        "duration": "5",
+        "description": "Cassian and another character are talking about an Imperial pilot who has deflected. The pilot is telling everyone that the Empire is building a weapon and that it is a planet killer.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["Rebellion", "Positive"],
+            ["", ""]
+        ],
+        "discussion": "This allows us to identify two factions, the empire and others, that would later be identified as the Rebels\nInformation Disclosure\n- Was any technical control to avoid information disclosure bypassed here?\nHuman Resources\n- How do you avoid an employee that is leaving the organisation from airing secrets? \n- How do you identify employees that may put the organization at risk? \n"
+    }, {
+        "time": "16:35",
+        "time_min": 16,
+        "time_secs": 995,
+        "duration": "5",
+        "description": "A prisoner van is assaulted and one of the prisoners, Jyn Erso, is freed by rebels.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "organization", "-", "asset", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["Rebellion", "Positive"],
+            ["Jyn", "Neutral"]
+        ],
+        "discussion": "Information Disclosure\n- How did the rebels know where and when was Jys?\nOrganization\n- Do the Empire (or the person in charge) properly think about the security of their transports?\nAsset Management\n- Is the process to transport prisoners secure?\n- How would you avoid this from happening again?\nPhysical Security\n- Did the convoy had enough security?\n"
+    }, {
+        "time": "29:56",
+        "time_min": 29,
+        "time_secs": 1796,
+        "duration": "4",
+        "description": "Ambush to an Imperial patrol by Saw Guerrera rebels in the city",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "organization", "-", "asset", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["Saw Guerrera Group", "Positive"],
+            ["Jyn", "Neutral"]
+        ],
+        "discussion": "Information Disclosure\n- How did the rebels know where and when was Jys?\nOrganization\n- Do the Empire (or the person in charge) properly think about the security of their transports?\nAsset Management\n- Is the process to transport prisoners secure?\n- How would you avoid this from happening again?\nPhysical Security\n- Did the convoy had enough security?\n"
+    }, {
+        "time": "33:50",
+        "time_min": 33,
+        "time_secs": 2030,
+        "duration": "1",
+        "description": "A stormtropper suspects the Imperial robot is not working properly and takes action by taking Cassian and Jyn as prisoners\n",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "-", "operations", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Empire", "Positive"],
+            ["Jyn", "Negative"],
+            ["", ""]
+        ],
+        "discussion": "Human Resources\nWas the robot behaviour fine?\nOperations Security \nWhat warned the Stormtrooper?\nIncident Management\nDid the Stormtrooper acted properly?\nWas there anything that Jyn, Cassian and the robot could have done to avoid this?\n"
+    }, {
+        "time": "45:00",
+        "time_min": 45,
+        "time_secs": 2700,
+        "duration": "5",
+        "description": "Jyn is able to watch, through the imperial pilot, a video from his father",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["policies", "-", "-", "-", "-", "-", "-", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Does this remind you of any other case? -> Snowden\nPolicies\nWhat kind of policy has the Empire on removable media?\nOperations Security\nWhat kind of control would you put in place to avoid such a breach?\n"
+    }, {
+        "time": "45:00",
+        "time_min": 45,
+        "time_secs": 2700,
+        "duration": "5",
+        "description": "Jyn’s father has control over critical parts of the design and introduces a weakness without anyone else noticing",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "-", "-", "system", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Tampering\nWhat is the vulnerability introduced?\nCan you describe this threat in risk components?\nWhat is the impact of this vulnerability on the Death star?\n\nHuman Resources\nAny reason to suspect from Jyn’s father?\n\nAccess Control\nWhich control did they fail to implement here? Segregation of duties. Jyn father has all the control over critical parts of the design\n\nSystem acquisition, develop. and maint.\nDoes the Empire follow a secure development lifecycle?\nHow would you fix this?\n"
+    }, {
+        "time": "50:00",
+        "time_min": 50,
+        "time_secs": 3000,
+        "duration": "1",
+        "description": "Death Star Director is fired because of the security breaches.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "organization", "hr", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Information Disclosure\nWhy is he fired?\nOrganisation\nWho was responsible for the security of the Death Star development?\nHuman Resources\nIs there any process followed to ensure that he doesn’t do harm after this?\n"
+    }, {
+        "time": "59:00",
+        "time_min": 59,
+        "time_secs": 3540,
+        "duration": "10",
+        "description": "First group of rebels (Jyn’s) don’t get detected when entering Eadu but the Rebel squadron is. However, the squadron is detection comes too late as they are able to attack the base without opposition\n",
+        "stride": ["-", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "physical", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Physical Security\nHow do they detect the rebel squadron?\n\nIncident Management\nHow long does it take them to respond to the attack?\nTaking into account the previous question, do you think their detection mechanisms and incident response processes are appropriate?\n"
+    }, {
+        "time": "1:13:00",
+        "time_min": 73,
+        "time_secs": 4380,
+        "duration": "2",
+        "description": "Darth Vader order and Investigation into Jyn’s father behaviour to ensure that the Death Star hasn’t been sabotaged.",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Empire", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Incident Management\nHow does the incident escalate to Darth Vader? \n"
+    }, {
+        "time": "1:18:00",
+        "time_min": 78,
+        "time_secs": 4680,
+        "duration": "3",
+        "description": "Jyn and the rest steal an imperial cargo ship.",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "hr", "-", "-", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Rebellion", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Physical Security\nWhat kind of protection does the ship has to avoid being stolen?\nAre the rebels checked at any point?\nHow would you fix this?\nHuman Resources\nWhat can you say about the HR management from the Rebels? At the end they are rebels, right? \n"
+    }, {
+        "time": "1:20:00",
+        "time_min": 80,
+        "time_secs": 4800,
+        "duration": "5",
+        "description": "Scarif has a shield that only allows authenticated ships to go through but the protocol is bypassed by the rebels with an old authentication code",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Access Control and Physical Security\nHow does the shield work? Authentication is based on ships only, not on pilots.\nDoes the Empire have a ship code revocation system? Does it work?\nHow would you fix this?\nHuman Resources\nIs the guard properly trained? \n"
+    }, {
+        "time": "1:26:00",
+        "time_min": 86,
+        "time_secs": 5160,
+        "duration": "1",
+        "description": "A guard opens the door to the complex to Cassian just because he is dressed as an official.",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "hr", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Access Control\nDo you think this Cassian’s strategy would work in real life?\nHow would you fix this?\nHuman Resources\nIs the guard properly trained? \n"
+    }, {
+        "time": "1:28:00",
+        "time_min": 88,
+        "time_secs": 5280,
+        "duration": "2",
+        "description": "Director Krenic asks for a review of all logged events from Galen Erso. ",
+        "stride": ["-", "t", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "incident", "-", "-"],
+        "parties": [
+            ["Empire", "Positive"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Incident Management\nWhat kind of things would you look for?\nDo you think this review is requested on time, or were they late?\n"
+    }, {
+        "time": "1:29:00",
+        "time_min": 89,
+        "time_secs": 5340,
+        "duration": "1",
+        "description": "The rebel robot gets access to the system through another robot. He is able to access all the plans. There is no segregation of duties, or access control policy in place.\n",
+        "stride": ["-", "-", "-", "-", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Access Control\nHow do you think the robot access the system?\nHow is he able to access all the plans?\nDo you think their access control policies are properly defined?\n"
+    }, {
+        "time": "1:32:00",
+        "time_min": 92,
+        "time_secs": 5520,
+        "duration": "1",
+        "description": "Rebels send fake messages and divert troops to other areas.\n",
+        "stride": ["s", "-", "r", "-", "d", "-"],
+        "isocontrols": ["-", "-", "-", "-", "-", "cryptography", "-", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Comms. Security\nWhat method do the Empire use to authenticate messages between patrols?\n\nCryptography\nCan you propose one system that is usable and at the same time secure?\n"
+    }, {
+        "time": "1:33:00",
+        "time_min": 93,
+        "time_secs": 5580,
+        "duration": "1",
+        "description": "Jyn and Cassian use an officer hand to open a controlled gate",
+        "stride": ["s", "-", "-", "-", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Spoofing\nWhat is the vulnerability of the access control system they have?\n\nAccess Control and Physical Security\nWhat kind of system is using the empire to restrict access to that area?\nHow would you fix it?\n"
+    }, {
+        "time": "1:41:00",
+        "time_min": 101,
+        "time_secs": 6060,
+        "duration": "5",
+        "description": "Jyn and Cassian access the archive room and from that moment they can access all the files.",
+        "stride": ["-", "-", "-", "i", "-", "e"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "operations", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Escalation of Privilege\nWhat kind of method does the Empire use to verify the identity of the person accessing the files once he is in the room?\n\nInformation Disclosure\nIs it difficult to get data from the system?\n\nAccess Control and Operations security\nHow would you fix this problem?\n\nPhysical Security\nDo you think it is enough to rely on physical security?\n"
+    }, {
+        "time": "1:42:00",
+        "time_min": 102,
+        "time_secs": 6120,
+        "duration": "1",
+        "description": "Jyn takes the Stardust file to transmit it outside.",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "asset", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Information disclosure\nWhat is the vulnerability shown in this scene?\n\nAsset Management\nWhat kind of controls do they have over removable media?\nWhat do you think about the way the Empire manage their information assets? Is it practical? Is it secure?\n"
+    }, {
+        "time": "1:50:00",
+        "time_min": 110,
+        "time_secs": 6600,
+        "duration": "1",
+        "description": "Jyn is able to send the files once the shield is deactivated",
+        "stride": ["-", "-", "-", "i", "-", "-"],
+        "isocontrols": ["-", "-", "-", "-", "access", "-", "physical", "-", "comms", "-", "-", "-", "-", "-"],
+        "parties": [
+            ["Empire", "Very negative"],
+            ["", ""],
+            ["", ""]
+        ],
+        "discussion": "Information disclosure\nIn Information Security terms, what kind of attacker is Jyn at that exact moment?\n\nAccess Control and Physical Security\nWhat kind of method of access control do the empire have over that network connection?\nDo you think that a physical security control is good for network access control?\n\nCommunication Security\nHow can you ensure that no sensitive information (IP, etc.) is sent outside your network?\n"
+    }]
+}
