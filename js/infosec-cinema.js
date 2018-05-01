@@ -1,6 +1,7 @@
 var PouchDB = require('pouchdb');
 
 var db = new PouchDB('movies');
+PouchDB.plugin(require('pouchdb-find'));
 
 $(function () {
     $("#option-movie").click(function () {
