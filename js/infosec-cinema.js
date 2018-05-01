@@ -105,10 +105,23 @@ function generateEvent(event){
                     '</div>',
                 '</div>'].join("\n");
     var strideBody = generateSTRIDE(event["stride"]);
+    var controlsBody = generateISOControls(event["isocontrols"]);
+    var partiesBody = generateParties(event["parties"]);
+    var discussionBody = ['<div class="row">',
+                    '<div class="column mr-3">',
+                        '<label class="font-weight-bold" for="scene">Discussion</label>',
+                    '</div>',    
+                    '<div class="column">',
+                        event["discussion"],
+                    '</div>',
+                '</div>'].join("\n");
     var cardBody = ['<div class="card-body">',
                     timeBody, 
                     sceneBody,
                     strideBody,
+                    controlsBody,
+                    partiesBody,
+                    discussionBody,
                     '</div>'].join("\n");
 
     var card = ['<div class="card">',
@@ -123,13 +136,13 @@ function generateSTRIDE(strideArray){
     var strideButtonsBody = "";
     for (var i = 0; i < strideLength; i++){
         if (strideArray[i] !== "-"){
-            strideButtonsBody = strideButtonsBody.concat('<button type="button" class="btn btn-danger active btn-sm mr-1">'+stride[strideArray[i]]+'</button>');
+            strideButtonsBody = strideButtonsBody.concat('<button type="button" class="btn btn-warning active btn-sm mr-1">'+stride[strideArray[i]]+'</button>');
         }
     }
     if (strideButtonsBody === ""){
         strideButtonsBody = "None";
     }
-    var strideBody = ['<div class="row">',
+    var strideBody = ['<div class="row mb-1">',
                         '<div class="column mr-3">',
                             '<label class="font-weight-bold" for="time">STRIDE</label>',
                         '</div>',    
@@ -137,6 +150,60 @@ function generateSTRIDE(strideArray){
                         strideButtonsBody,
                         '</div>',
                     '</div>'].join("\n");
-    console.log(strideButtonsBody);
     return strideBody;
+}
+
+function generateISOControls(controlsArray){
+    const controls = {policies:"Policies", organization:"Organization", hr:"Human Resources", asset:"Asset Management", access:"Access Control", cryptography:"Cryptography",
+                    physical: "Physical Security", operations:"Operations" , comms:"Communications", system:"System acquisition, develop. and maint.", supplier:"Supplier Relations",
+                    incident:"Incident Management", continuity:"Business Continuity", compliance:"Compliance"};
+    var controlsLength = controlsArray.length;    
+    var controlsButtonsBody = "";
+    for (var i = 0; i < controlsLength; i++){
+        if (controlsArray[i] !== "-"){
+            controlsButtonsBody = controlsButtonsBody.concat('<button type="button" class="btn btn-info active btn-sm mr-1">'+controls[controlsArray[i]]+'</button>');
+        }
+    }
+    if (controlsButtonsBody === ""){
+        controlsButtonsBody = "None";
+    }
+    var controlsBody = ['<div class="row mb-1">',
+                        '<div class="column mr-3">',
+                            '<label class="font-weight-bold" for="time">ISO CONTROLS</label>',
+                        '</div>',    
+                        '<div class="column">',
+                        controlsButtonsBody,
+                        '</div>',
+                    '</div>'].join("\n");
+    return controlsBody;
+}
+
+function generateParties(partiesArray){
+    var partiesLength = partiesArray.length;    
+    var partiesButtonsBody = "";
+    for (var i = 0; i < partiesLength; i++){
+        if (partiesArray[i][0] !== ""){
+            var partiesButton = '<button type="button" class="btn btn-secondary active btn-sm mr-1">'+partiesArray[i][1]+'</button>';
+            if (partiesArray[i][1] === "Positive" || partiesArray[i][1] === "Very Positive"){
+                partiesButton = '<button type="button" class="btn btn-success active btn-sm mr-1">'+partiesArray[i][1]+'</button>';
+            } else if (partiesArray[i][1] === "Negative" || partiesArray[i][1] === "Very Negative") {
+                partiesButton = '<button type="button" class="btn btn-danger active btn-sm mr-1">'+partiesArray[i][1]+'</button>';
+            }
+            var thisParty = ['<div class="row mb-2">',
+                                    '<label class="mr-2" for="time">',
+                                        partiesArray[i][0],
+                                    '</label>',
+                                    partiesButton,
+                            '</div>'].join("\n");
+            partiesButtonsBody = partiesButtonsBody.concat(thisParty);
+        }
+    }
+    var partiesBody = ['<div class="row mb-1">',
+                            '<div class="column mr-3">',
+                                '<label class="font-weight-bold" for="time">Parties</label>',
+                            '</div>',  
+                        '</div>',  
+ 
+                            partiesButtonsBody].join("\n");
+    return partiesBody;
 }
