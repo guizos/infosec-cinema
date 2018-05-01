@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col">
                 <div class="input-group input-group-lg mb-3">
-                    <input type="text" class="form-control" placeholder="Search for a keyword or keywords" aria-label="Search for a keyword or keywords"
+                    <input type="text" class="form-control" id="search-field" placeholder="Search for a keyword or keywords" aria-label="Search for a keyword or keywords"
                         aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-outline-secondary" id="search" type="button">Search</button>
@@ -31,25 +31,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2">
-                <div class="row">
-                    <div class="btn-group btn-group-toggle btn-group-lg" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
-                            <input type="radio" name="options" id="option-movie" autocomplete="off" checked> Movies
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="options" id="option-event" autocomplete="off"> Events
-                        </label>
-                    </div>
+           
+        </div>
+        <div class="row">
+                <div class="col">
+                <label>Filter by:</label>
                 </div>
-            </div>
         </div>
         <div class="row">
             <div class="col">
 
                 <div class="accordion" id="filters">
                     <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header-sm" id="headingOne">
                             <h5 class="mb-0 p-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
@@ -89,7 +83,7 @@
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="card-header" id="headingTwo">
+                        <div class="card-header-sm" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
@@ -168,24 +162,150 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card">
-                    <h5 class="card-header">Movies - Events (show all movies first)</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                1 of 3
-                            </div>
-                            <div class="col">
-                                2 of 3
-                            </div>
-                            <div class="col">
-                                3 of 3
-                            </div>
-                        </div>
-                    </div>
+                <div id="element-type">
+                    <h2>Results</h2>
+                </div>
+                <div id="results">
+
                 </div>
             </div>
         </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <label class="font-weight-bold" for="time">Time</label>
+            </div>
+            <div class="row">
+                <div class="column">
+                    TIME
+                </div>
+                <div class="column">
+                    DURATION
+                </div>
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="time">Scene</label>
+            </div>
+            <div class="row">
+                SCENE TEXT
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="stride">Threats (STRIDE)</label>
+            </div>
+            <div class="row">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="spoofing">
+                    <label class="form-check-label" for="spoofing">Spoofing</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="tampering">
+                    <label class="form-check-label" for="tampering">Tampering</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="repudiation">
+                    <label class="form-check-label" for="repudiation">Repudiation</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="disclousure">
+                    <label class="form-check-label" for="disclousure">Information Disclousure</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="denial">
+                    <label class="form-check-label" for="denial">Denial of Service</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="escalation">
+                    <label class="form-check-label" for="escalation">Escalation of Privilege</label>
+                </div>
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="stride">ISO Controls</label>
+            </div>
+            <div class="row">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="policies" value="policies">
+                    <label class="form-check-label" for="policies">Policies</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="organization" value="organization">
+                    <label class="form-check-label" for="organization">Organization</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="human" value="hr">
+                    <label class="form-check-label" for="human">Human Resources</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="asset" value="asset">
+                    <label class="form-check-label" for="asset">Asset Mngmt.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="access" value="access">
+                    <label class="form-check-label" for="access">Access Control</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="cryptography" value="cryptography">
+                    <label class="form-check-label" for="cryptography">Cryptography</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="physical" value="physical">
+                    <label class="form-check-label" for="physical">Physical Security</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="operations" value="operations">
+                    <label class="form-check-label" for="operations">Operations Security</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="comms" value="comms">
+                    <label class="form-check-label" for="comms">Communications Security</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="system" value="system">
+                    <label class="form-check-label" for="system">System acquisition, develop. and maint.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="supplier" value="supplier">
+                    <label class="form-check-label" for="supplier">Supplier relationships</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="incident" value="incident">
+                    <label class="form-check-label" for="incident">Incident Management</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="continuity" value="continuity">
+                    <label class="form-check-label" for="continuity">Business Continuity</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="compliance" value="compliance">
+                    <label class="form-check-label" for="compliance">Compliance</label>
+                </div>
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="time">Other Keywords</label>
+            </div>
+            <div class="row">
+                KEYWORDS TEXT
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="time">Effect on Security of Parties Involved</label>
+            </div>
+            <div class="row">
+                PARTY 1 - EFFECT
+            </div>
+            <div class="row">
+                PARTY 2 - EFFECT
+            </div>
+            <div class="row">
+                PARTY 3 - EFFECT
+            </div>
+            <div class="row">
+                <label class="font-weight-bold" for="time">Discussion Topcis</label>
+            </div>
+            <div class="row">
+                DISCUSSION TOPICS
+            </div>
+        </div>
+    </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -193,7 +313,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- JavaScript -->
     <script src="js/bundle.js"></script>
-    <script src="js/infosec-cinema.js"></script>
 </body>
 
 </html>
