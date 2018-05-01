@@ -1,3 +1,38 @@
+const stride = { s: "Spoofing", t: "Tampering", r: "Repudiation", i: "Information Leakage", d: "Denial of Service", e: "Escalation of Privilege" };
+const stride_ids = { s: '#spoofing', t: '#tampering', r: '#repudiation', i: '#information', d: '#dos', e: '#escalation' };
+const controls_ids = {
+    policies: '#policies',
+    organization: '#organization',
+    hr: '#hr',
+    asset: '#asset',
+    access: '#access',
+    cryptography: '#cryptography',
+    physical: '#physical',
+    operations: '#operations',
+    comms: '#comms',
+    system: '#system',
+    supplier: '#supplier',
+    incident: '#incident',
+    continuity: '#continuity',
+    compliance: '#compliance'
+};
+const controls = {
+    policies: "Policies",
+    organization: "Organization",
+    hr: "Human Resources",
+    asset: "Asset Management",
+    access: "Access Control",
+    cryptography: "Cryptography",
+    physical: "Physical Security",
+    operations: "Operations",
+    comms: "Communications",
+    system: "System acquisition, develop. and maint.",
+    supplier: "Supplier Relations",
+    incident: "Incident Management",
+    continuity: "Business Continuity",
+    compliance: "Compliance"
+};
+
 var db = [];
 
 
@@ -11,12 +46,64 @@ $(function() {
     });
     console.log("ready!");
     initWithAllMovies();
+    $("#search").click(function() {
+        var stride_keywords = [];
+        var keysStride = Object.keys(stride_ids);
+        for (var i = 0; i < keysStride.length; i++) {
+            if ($(stride_ids[keysStride[i]]).is(":checked")) {
+                stride_keywords.push(stride[keysStride[i]]);
+                stride_keywords.push(stride[keysStride[i]].toLowerCase());
+            }
+        }
+        var controls_keywords = [];
+        var keysControls = Object.keys(controls_ids);
+        for (var i = 0; i < keysControls.length; i++) {
+            if ($(controls_ids[keysControls[i]]).is(":checked")) {
+                controls_keywords.push(controls[keysControls[i]]);
+                controls_keywords.push(controls[keysControls[i]].toLowerCase());
+            }
+        }
+        var keywords = $("#search-field").val().split(" ");
+        filerEventsInMovies(keywords, stride_keywords, controls_keywords);
+    });
 
     $("#clear").click(function() {
         $("#search-field").val("");
-        loadForSearchField("");
+        var stride_keywords = [];
+        var keysStride = Object.keys(stride_ids);
+        for (var i = 0; i < keysStride.length; i++) {
+            $(stride_ids[keysStride[i]]).prop('checked', false);
+        }
+        var controls_keywords = [];
+        var keysControls = Object.keys(controls_ids);
+        for (var i = 0; i < keysControls.length; i++) {
+            $(controls_ids[keysControls[i]]).prop('checked', false);
+        }
+        var numberMovies = db.length;
+        for (var j = 0; j < numberMovies; j++) {
+            var elems = $('#movie' + j.toString()).find(".scene");
+            elems.show();
+            $('#itemsmovie' + j.toString()).html("(" + elems.length + " cards)");
+        }
     });
 });
+
+function filerEventsInMovies(keywords, stride_kw, controls_kw) {
+    var numberMovies = db.length;
+    for (var j = 0; j < numberMovies; j++) {
+        var elems = $('#movie' + j.toString()).find(".scene");
+        var KeywordArr = keywords.concat(stride_kw).concat(controls_kw);
+        KeywordArr = KeywordArr.filter(e => e !== "");
+        console.log(KeywordArr);
+        var res = $();
+        for (var i = 0; i < KeywordArr.length; i++) {
+            res = res.add(elems.filter(":contains('" + KeywordArr[i] + "')"));
+        }
+        var new_size = res.length;
+        $('#itemsmovie' + j.toString()).html("(" + new_size + " cards)");
+        elems.not(res).hide();
+    }
+}
 
 function initWithAllMovies() {
     const file = 'movies/list.json';
@@ -51,18 +138,19 @@ function redrawMoviesUI(rows) {
     var rowsLength = rows.length;
     for (var i = 0; i < rowsLength; i++) {
         movie = rows[i];
+        var movieCard = "";
+        var movieEvents = movie["events"];
+        var eventsLength = movieEvents.length;
         var preMovieCard = ['<div class="card border-light mb-3">',
             '<div class="card-header-sm" id="heading' + i.toString() + '">',
             '<h5><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse' + i.toString() + '" aria-expanded="true" aria-controls="collapse' + i.toString() + '">',
             movie["title"],
+            '<span id="itemsmovie' + i.toString() + '"> (' + eventsLength + ' cards)</span>',
             '</button></h5>',
             '</div>',
             '<div id="collapse' + i.toString() + '" class="collapse" aria-labelledby="heading' + i.toString() + '" data-parent="#accordionExample">',
-            '<div class="card-body">'
+            '<div class="card-body" id="movie' + i.toString() + '">'
         ].join("\n");
-        var movieCard = "";
-        var movieEvents = movie["events"];
-        var eventsLength = movieEvents.length;
         for (var j = 0; j < eventsLength; j++) {
             movieCard = movieCard + generateEvent(movieEvents[j]);
         }
@@ -103,7 +191,7 @@ function generateEvent(event) {
         '</div>',
         '</div>'
     ].join("\n");
-    var cardBody = ['<div class="card-body">',
+    var cardBody = ['<div class="card-body scene">',
         timeBody,
         sceneBody,
         strideBody,
@@ -121,7 +209,6 @@ function generateEvent(event) {
 }
 
 function generateSTRIDE(strideArray) {
-    const stride = { s: "Spoofing", t: "Tampering", r: "Repudiation", i: "Information Leakage", d: "Denial of Service", e: "Escalation of Privilege" };
     var strideLength = strideArray.length;
     var strideButtonsBody = "";
     for (var i = 0; i < strideLength; i++) {
@@ -136,7 +223,7 @@ function generateSTRIDE(strideArray) {
         '<div class="column mr-3">',
         '<label class="font-weight-bold" for="time">STRIDE</label>',
         '</div>',
-        '<div class="column">',
+        '<div class="column stride">',
         strideButtonsBody,
         '</div>',
         '</div>'
@@ -145,22 +232,7 @@ function generateSTRIDE(strideArray) {
 }
 
 function generateISOControls(controlsArray) {
-    const controls = {
-        policies: "Policies",
-        organization: "Organization",
-        hr: "Human Resources",
-        asset: "Asset Management",
-        access: "Access Control",
-        cryptography: "Cryptography",
-        physical: "Physical Security",
-        operations: "Operations",
-        comms: "Communications",
-        system: "System acquisition, develop. and maint.",
-        supplier: "Supplier Relations",
-        incident: "Incident Management",
-        continuity: "Business Continuity",
-        compliance: "Compliance"
-    };
+
     var controlsLength = controlsArray.length;
     var controlsButtonsBody = "";
     for (var i = 0; i < controlsLength; i++) {
@@ -175,7 +247,7 @@ function generateISOControls(controlsArray) {
         '<div class="column mr-3">',
         '<label class="font-weight-bold" for="time">ISO CONTROLS</label>',
         '</div>',
-        '<div class="column">',
+        '<div class="column isocontrols">',
         controlsButtonsBody,
         '</div>',
         '</div>'
