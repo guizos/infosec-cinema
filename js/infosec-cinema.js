@@ -79,7 +79,7 @@ function redrawMoviesUI(rows) {
             var movieEvents = movie["events"]
             var eventsLength = movieEvents.length;
             for (var j = 0; j < eventsLength; j++){
-                movieCard = movieCard + generateEvent(movieEvents[i]);
+                movieCard = movieCard + generateEvent(movieEvents[j]);
             }
             var postMovieCard = '</div>'+'</div>';
             $( "#results" ).append(preMovieCard+movieCard+postMovieCard);
@@ -87,19 +87,56 @@ function redrawMoviesUI(rows) {
 }
 
 function generateEvent(event){
-    var cardBody = ['<div class="card-body">',
-                        '<div class="row">',
+
+    var timeBody = ['<div class="row">',
+                        '<div class="column mr-3">',
                             '<label class="font-weight-bold" for="time">Time</label>',
                         '</div>',    
-                        '<div class="row">',
-                            '<div class="column">',
-                                    'Minute '+event["time_min"].toString()+' ('+event["duration"].toString()+' minutes)',
-                            '</div>',
-                        '</div>',    
+                        '<div class="column">',
+                            'Minute '+event["time_min"].toString()+' ('+event["duration"].toString()+' minutes)',
+                        '</div>',
+                    '</div>'].join("\n");
+    var sceneBody = ['<div class="row">',
+                    '<div class="column mr-3">',
+                        '<label class="font-weight-bold" for="scene">Scene</label>',
+                    '</div>',    
+                    '<div class="column">',
+                        event["description"],
+                    '</div>',
+                '</div>'].join("\n");
+    var strideBody = generateSTRIDE(event["stride"]);
+    var cardBody = ['<div class="card-body">',
+                    timeBody, 
+                    sceneBody,
+                    strideBody,
                     '</div>'].join("\n");
 
     var card = ['<div class="card">',
                     cardBody,
                 '</div>'].join("\n");
     return card;
+}
+
+function generateSTRIDE(strideArray){
+    const stride= {s: "Spoofing", t:"Tampering", r:"Repudiation", i:"Information Leakage", d:"Denial of Service", e:"Escalation of Privilege"};
+    var strideLength = strideArray.length;    
+    var strideButtonsBody = "";
+    for (var i = 0; i < strideLength; i++){
+        if (strideArray[i] !== "-"){
+            strideButtonsBody = strideButtonsBody.concat('<button type="button" class="btn btn-danger active btn-sm mr-1">'+stride[strideArray[i]]+'</button>');
+        }
+    }
+    if (strideButtonsBody === ""){
+        strideButtonsBody = "None";
+    }
+    var strideBody = ['<div class="row">',
+                        '<div class="column mr-3">',
+                            '<label class="font-weight-bold" for="time">STRIDE</label>',
+                        '</div>',    
+                        '<div class="column">',
+                        strideButtonsBody,
+                        '</div>',
+                    '</div>'].join("\n");
+    console.log(strideButtonsBody);
+    return strideBody;
 }
