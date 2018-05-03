@@ -1,5 +1,6 @@
 {
     "title": "The Lion King",
+    "imdb": "https://www.imdb.com/title/tt0110357",
     "events": [{
         "time": "09:43",
         "time_min": 9,
