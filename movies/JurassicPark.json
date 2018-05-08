@@ -1,5 +1,6 @@
 {
     "title": "Jurassic Park",
+    "imdb": "https://www.imdb.com/title/tt0107290",
     "events": [{
         "time": "02:30",
         "time_min": 2,
